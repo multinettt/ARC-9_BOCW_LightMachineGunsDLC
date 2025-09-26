@@ -1,16 +1,14 @@
-# ARC9 BOCW Light Machine Guns
+# ARC9 BOCW Light Machine Guns DLC
 
-3 launch BOCW light machine guns on the base [ARC9](https://github.com/HaodongMo/ARC-9)
+1 seasonal BOCW light machine gun on the base [ARC9](https://github.com/HaodongMo/ARC-9)
 
 ## You need to have [Shared Content](https://github.com/multinettt/ARC-9_BOCW_Shared_Content) in order to avoid missing textures, materials and sounds.
 
 ## Customization is limited without [BOCW Attachments](https://github.com/multinettt/ARC-9_BOCW_Attachments)
 
 ## Weapons List:
-### Light Machine Guns:
-- Stoner 63 (Stoner 63A)
-- RPD
-- M60
+### Light Machine Guns DLC:
+- MG 82 (CETME Ameli)
 
 ## Personalization:
 
