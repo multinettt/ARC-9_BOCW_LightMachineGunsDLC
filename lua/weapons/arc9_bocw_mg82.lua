@@ -491,27 +491,19 @@ SWEP.AttachmentElements = {
     },
     ["barrelgone"] = {
         Bodygroups = {
+            {4, 1},
+            {5, 1},
+            {7, 1},
+        }
+    },
+    ["bipodgone"] = {
+        Bodygroups = {
             {5, 1},
         }
     },
     ["stockgone"] = {
         Bodygroups = {
-            {7, 1},
-        }
-    },
-    ["mg82_mag_ext"] = {
-        Bodygroups = {
-            {8, 1},
-        }
-    },
-    ["mg82_mag_fast"] = {
-        Bodygroups = {
-            {8, 2},
-        }
-    },
-    ["mg82_mag_mix"] = {
-        Bodygroups = {
-            {8, 3},
+            {6, 1},
         }
     },
     ["bodymount_lasermix"] = {
@@ -527,42 +519,37 @@ SWEP.AttachmentElements = {
     ["barrel_cutdown"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(-7, 0, -0.02),
+                Pos = Vector(-1.69, 0, 0),
             },
         },
-        Bodygroups = {
-            {6, 1},
-        }
     },
     ["barrel_sorcutdown"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(-8.1, 0, -0.02),
+                Pos = Vector(-4.19, 0, 0),
             },
         },
-        Bodygroups = {
-            {6, 1},
-        }
     },
     ["barrel_cavalry"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(-5.2, 0, 0.02),
+                Pos = Vector(2.46, 0, 0.02),
             },
         },
-        Bodygroups = {
-            {6, 1},
-        }
     },
     ["barrel_division"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(-5.3, 0, 0.01),
+                Pos = Vector(-1.81, 0, 0),
             },
         },
-        Bodygroups = {
-            {6, 1},
-        }
+    },
+    ["barrel_matchgrade"] = {
+        AttPosMods = {
+            [2] = {
+                Pos = Vector(1.77, 0, 0),
+            },
+        },
     },
 }
 
@@ -631,7 +618,7 @@ SWEP.Attachments = {
     {
         PrintName = "BARREL",
         Bone = "tag_barrel",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0.76, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(10, 0, 0),
         Category = {"bocw_mg82_barrel"},
@@ -658,17 +645,18 @@ SWEP.Attachments = {
     {
         PrintName = "UNDRBARREL",
         Bone = "tag_weapon",
-        Pos = Vector(-10.5, -4.42, 5.8),
+        Pos = Vector(-8, -4.42, 6.95),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(20.25, 4.5, -5),
         Category = {"bocw_lmg_underbarrel_west"},
+        InstalledElements = {"bipodgone"},
     },
     {
         PrintName = "MAGAZINE",
         Bone = "tag_clip",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, -1),
+        Icon_Offset = Vector(0, 0, -2),
         Category = {"bocw_mg82_mag"},
         InstalledElements = {"maggone"},
     },
@@ -677,7 +665,7 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(-1, 0, -0.75),
+        Icon_Offset = Vector(-0.5, 0, -0.75),
         Category = {"bocw_mg82_wrap"},
     },
     {
@@ -685,7 +673,7 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(-10, 0, 3),
+        Icon_Offset = Vector(-8, 0, 3),
         Category = {"bocw_mg82_stock"},
         InstalledElements = {"stockgone"},
     },
@@ -715,43 +703,9 @@ SWEP.Attachments = {
     },
     {
         PrintName = "STICKER 4",
-        Bone = "tag_clip",
         Category = "stickers",
         StickerModel = "models/weapons/arc9/stickers/bocw_mg82_sticker4.mdl",
         CosmeticOnly = true,
-        ExcludeElements = {"mg82_mag_ext", "mg82_mag_fast", "mg82_mag_mix"}
-    },
-    {
-        PrintName = "STICKER 4",
-        Bone = "tag_clip",
-        Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_mg82_sticker4_ext.mdl",
-        CosmeticOnly = true,
-        RequireElements = {"mg82_mag_ext"}
-    },
-    {
-        PrintName = "STICKER 4",
-        Bone = "tag_clip",
-        Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_mg82_sticker4_fast.mdl",
-        CosmeticOnly = true,
-        RequireElements = {"mg82_mag_fast"}
-    },
-    {
-        PrintName = "STICKER 4",
-        Bone = "tag_clip",
-        Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_mg82_sticker4_mix.mdl",
-        CosmeticOnly = true,
-        RequireElements = {"bocw_mg82_magazine_mix1"}
-    },
-    {
-        PrintName = "STICKER 4",
-        Bone = "tag_clip",
-        Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_mg82_sticker4_mixpro.mdl",
-        CosmeticOnly = true,
-        RequireElements = {"bocw_mg82_magazine_mixpro"}
     },
 }
 
@@ -1063,16 +1017,17 @@ SWEP.Animations = {
     ["reload_fast"] = {
         Source = "reload_fast",
         Time = 9.56,
+        MagSwapTime = 3.8,
         DropMagAt = 1.2,
         MinProgress = 0.8,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
-            { s = "ARC9_BOCW.MG82_boltback", t = 1 },
-            { s = "ARC9_BOCW.MG82_boltforward", t = 1.4 },
-            { s = "ARC9_BOCW.MG82_reload_topopen", t = 2.4 },
-            { s = "ARC9_BOCW.MG82_reload_magout", t = 3.5 },
-            { s = "ARC9_BOCW.MG82_reload_magin", t = 5.3 },
-            { s = "ARC9_BOCW.MG82_reload_belt", t = 6.4 },
+            { s = "ARC9_BOCW.MG82_boltback", t = 0.3 },
+            { s = "ARC9_BOCW.MG82_boltforward", t = 0.8 },
+            { s = "ARC9_BOCW.MG82_reload_topopen", t = 1.9 },
+            { s = "ARC9_BOCW.MG82_reload_magout", t = 3 },
+            { s = "ARC9_BOCW.MG82_reload_magin", t = 5.2 },
+            { s = "ARC9_BOCW.MG82_reload_belt", t = 6.2 },
             { s = "ARC9_BOCW.MG82_reload_topclose", t = 8 },
             { s = "ARC9_BOCW.MG82_reload_end", t = 8.7 },
             { hide = 0, t = 0 },
@@ -1105,17 +1060,17 @@ SWEP.Animations = {
     ["reload_empty_fast"] = {
         Source = "reload_fast_empty",
         Time = 9.56,
-        MagSwapTime = 1.5,
+        MagSwapTime = 3.8,
         DropMagAt = 1.2,
         MinProgress = 0.8,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
-            { s = "ARC9_BOCW.MG82_boltback", t = 1 },
-            { s = "ARC9_BOCW.MG82_boltforward", t = 1.4 },
-            { s = "ARC9_BOCW.MG82_reload_topopen", t = 2.4 },
-            { s = "ARC9_BOCW.MG82_reload_magout", t = 3.5 },
-            { s = "ARC9_BOCW.MG82_reload_magin", t = 5.3 },
-            { s = "ARC9_BOCW.MG82_reload_belt", t = 6.4 },
+            { s = "ARC9_BOCW.MG82_boltback", t = 0.3 },
+            { s = "ARC9_BOCW.MG82_boltforward", t = 0.8 },
+            { s = "ARC9_BOCW.MG82_reload_topopen", t = 1.9 },
+            { s = "ARC9_BOCW.MG82_reload_magout", t = 3 },
+            { s = "ARC9_BOCW.MG82_reload_magin", t = 5.2 },
+            { s = "ARC9_BOCW.MG82_reload_belt", t = 6.2 },
             { s = "ARC9_BOCW.MG82_reload_topclose", t = 8 },
             { s = "ARC9_BOCW.MG82_reload_end", t = 8.7 },
             { hide = 0, t = 0 },

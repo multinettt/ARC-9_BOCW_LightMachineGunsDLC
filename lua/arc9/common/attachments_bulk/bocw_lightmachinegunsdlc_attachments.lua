@@ -32,6 +32,18 @@ ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
+ATT.DrawFunc = function(swep, model)
+    local elements = swep:GetElements()
+
+    if elements["optic_mount"] then
+        model:SetBodygroup(1,1)
+    end
+
+    if elements["bipodgone"] then
+        model:SetBodygroup(2,1)
+    end
+end
+
 ATT.SpeedMultShooting = 1.25
 
 ATT.MuzzleParticleOverride_Priority = 100
@@ -61,6 +73,18 @@ ATT.Model = "models/weapons/arc9/atts/bocw_mg82_barrel_cavalry.mdl"
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.DrawFunc = function(swep, model)
+    local elements = swep:GetElements()
+
+    if elements["optic_mount"] then
+        model:SetBodygroup(1,1)
+    end
+
+    if elements["bipodgone"] then
+        model:SetBodygroup(2,1)
+    end
+end
 
 ATT.DamageTypeOverride = DMG_AIRBOAT
 ATT.ArmorPiercingMult = 2
@@ -93,6 +117,18 @@ ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
+ATT.DrawFunc = function(swep, model)
+    local elements = swep:GetElements()
+
+    if elements["optic_mount"] then
+        model:SetBodygroup(1,1)
+    end
+
+    if elements["bipodgone"] then
+        model:SetBodygroup(2,1)
+    end
+end
+
 ATT.SpeedMultShooting = 1.35
 ATT.DamageMinMult = 1.1
 ATT.DamageMaxMult = 1.1
@@ -113,7 +149,7 @@ ARC9.LoadAttachment(ATT, "bocw_mg82_barrel_division")
 ATT = {}
 
 ATT.PrintName = [[13.4" SOR Cut Down]] --// 4
-ATT.CompactName = [[13.4" SOR CUT]]
+ATT.CompactName = [[13.4" SOR]]
 ATT.Icon = Material("entities/bocw_atts/barrels/mg82_sorcutdown.png", "mips smooth")
 ATT.Description = [[Cut down steel barrel. Reduced weapon weight maximizes movement speed when firing.
 
@@ -128,6 +164,18 @@ ATT.Model = "models/weapons/arc9/atts/bocw_mg82_barrel_sorcutdown.mdl"
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.DrawFunc = function(swep, model)
+    local elements = swep:GetElements()
+
+    if elements["optic_mount"] then
+        model:SetBodygroup(1,1)
+    end
+
+    if elements["bipodgone"] then
+        model:SetBodygroup(2,1)
+    end
+end
 
 ATT.SpeedMultShooting = 1.5
 
@@ -162,6 +210,18 @@ ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
+ATT.DrawFunc = function(swep, model)
+    local elements = swep:GetElements()
+
+    if elements["optic_mount"] then
+        model:SetBodygroup(1,1)
+    end
+
+    if elements["bipodgone"] then
+        model:SetBodygroup(2,1)
+    end
+end
+
 ATT.RangeMinMult = 1.5
 ATT.RangeMaxMult = 1.5
 
@@ -194,6 +254,18 @@ ATT.Model = "models/weapons/arc9/atts/bocw_mg82_barrel_taskforce.mdl"
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.DrawFunc = function(swep, model)
+    local elements = swep:GetElements()
+
+    if elements["optic_mount"] then
+        model:SetBodygroup(1,1)
+    end
+
+    if elements["bipodgone"] then
+        model:SetBodygroup(2,1)
+    end
+end
 
 ATT.DamageMaxMult = 1.1
 ATT.DamageMinMult = 1.1
