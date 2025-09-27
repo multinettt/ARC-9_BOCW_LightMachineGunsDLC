@@ -360,9 +360,7 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     "tag_bullet_deplete_sqtl_07_animate",
     "tag_bullet_deplete_sqtl_08_animate",
     "tag_bullet_deplete_sqtl_09_animate",
-    "tag_bullet_deplete_sqtl_10_animate",
-    "tag_bullet_deplete_sqtl_11_animate",
-    "tag_bullet_deplete_sqtl_12_animate"
+    "tag_bullet_deplete_sqtl_10_animate"
 }
 SWEP.CaseBones = {}
 -- Unlike BulletBones, these bones are determined by the missing bullet amount when reloading
@@ -389,9 +387,7 @@ SWEP.ReloadHideBoneTables = {
     "tag_bullet_deplete_sqtl_07_animate",
     "tag_bullet_deplete_sqtl_08_animate",
     "tag_bullet_deplete_sqtl_09_animate",
-    "tag_bullet_deplete_sqtl_10_animate",
-    "tag_bullet_deplete_sqtl_11_animate",
-    "tag_bullet_deplete_sqtl_12_animate"},
+    "tag_bullet_deplete_sqtl_10_animate"},
 }
 
 SWEP.PoseParameters = {} -- Poseparameters to manage. ["parameter"] = starting value.
@@ -850,12 +846,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.38,
+                t = 0.2,
                 lhik = 1,
                 rhik = 0
             },
             {
-                t = 0.4,
+                t = 0.3,
                 lhik = 0,
                 rhik = 0
             },
@@ -898,12 +894,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.38,
+                t = 0.2,
                 lhik = 1,
                 rhik = 0
             },
             {
-                t = 0.42,
+                t = 0.3,
                 lhik = 0,
                 rhik = 0
             },
@@ -946,12 +942,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.38,
+                t = 0.2,
                 lhik = 1,
                 rhik = 0
             },
             {
-                t = 0.4,
+                t = 0.3,
                 lhik = 0,
                 rhik = 0
             },
@@ -994,12 +990,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.38,
+                t = 0.2,
                 lhik = 1,
                 rhik = 0
             },
             {
-                t = 0.42,
+                t = 0.3,
                 lhik = 0,
                 rhik = 0
             },
@@ -1042,17 +1038,22 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.1,
+                t = 0.15,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.25,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.9,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -1085,17 +1086,22 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.1,
+                t = 0.15,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.25,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.9,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -1128,12 +1134,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.38,
+                t = 0.15,
                 lhik = 1,
                 rhik = 0
             },
             {
-                t = 0.4,
+                t = 0.25,
                 lhik = 0,
                 rhik = 0
             },
@@ -1176,12 +1182,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.38,
+                t = 0.15,
                 lhik = 1,
                 rhik = 0
             },
             {
-                t = 0.42,
+                t = 0.25,
                 lhik = 0,
                 rhik = 0
             },
@@ -1201,20 +1207,11 @@ SWEP.Animations = {
         Source = "supersprint_in",
         Time = 0.75,
         NoStatAffectors = true,
-        EventTable = {
-            { s = "ARC9_BOCW.MG82_sprint_belt", t = 0.1 },
-        },
     },
     ["idle_sprint"] = {
         Source = "sprint_loop",
         Time = 2,
         NoStatAffectors = true,
-        EventTable = {
-            { s = "ARC9_BOCW.MG82_sprint_belt", t = 0.5 },
-            { s = "ARC9_BOCW.MG82_sprint_belt", t = 1 },
-            { s = "ARC9_BOCW.MG82_sprint_belt", t = 1.5 },
-            { s = "ARC9_BOCW.MG82_sprint_belt", t = 2 },
-        },
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -1235,17 +1232,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.4,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.45,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 0.85,
                 lhik = 0,
                 rhik = 0
             },
