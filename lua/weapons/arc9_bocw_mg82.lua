@@ -183,17 +183,17 @@ SWEP.Firemodes = {
 
 -------------------------- RECOIL
 
-SWEP.Recoil = 0.8
+SWEP.Recoil = 1
 SWEP.RecoilSide = -1.3
 SWEP.RecoilUp = 0.3
 
 SWEP.RecoilRandomUp = 0.01
-SWEP.RecoilRandomSide = 0.03
+SWEP.RecoilRandomSide = 0.1
 
 SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0.1 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 0.4
+SWEP.RecoilAutoControl = 0.2
 SWEP.RecoilKick = 2
 
 SWEP.Spread = math.rad(1 / 37.5)
@@ -617,7 +617,7 @@ SWEP.Attachments = {
         Bone = "tag_barrel",
         Pos = Vector(0.76, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(10, 0, 0),
+        Icon_Offset = Vector(9, 0, 0),
         Category = {"bocw_mg82_barrel"},
         InstalledElements = {"barrelgone"},
     },
@@ -824,7 +824,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.5,
         DropMagAt = 4,
-        MinProgress = 0.9,
+        MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
             { s = "ARC9_BOCW.MG82_boltback", t = 1 },
@@ -872,7 +872,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 4.5,
         DropMagAt = 4,
-        MinProgress = 0.9,
+        MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
             { s = "ARC9_BOCW.MG82_boltback", t = 1 },
@@ -920,7 +920,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.5,
         DropMagAt = 4,
-        MinProgress = 0.9,
+        MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
             { s = "ARC9_BOCW.MG82_boltback", t = 1 },
@@ -968,7 +968,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.5,
         DropMagAt = 4,
-        MinProgress = 0.9,
+        MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
             { s = "ARC9_BOCW.MG82_boltback", t = 1 },
@@ -1016,7 +1016,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.8,
         DropMagAt = 3.5,
-        MinProgress = 0.8,
+        MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
             { s = "ARC9_BOCW.MG82_boltback", t = 0.3 },
@@ -1064,7 +1064,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.8,
         DropMagAt = 3.5,
-        MinProgress = 0.8,
+        MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
             { s = "ARC9_BOCW.MG82_boltback", t = 0.3 },
@@ -1112,7 +1112,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.5,
         DropMagAt = 3.5,
-        MinProgress = 0.9,
+        MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
             { s = "ARC9_BOCW.MG82_boltback", t = 1 },
@@ -1160,7 +1160,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.5,
         DropMagAt = 3.5,
-        MinProgress = 0.9,
+        MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
             { s = "ARC9_BOCW.MG82_boltback", t = 1 },
