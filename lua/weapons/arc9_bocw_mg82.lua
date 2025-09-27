@@ -508,12 +508,13 @@ SWEP.AttachmentElements = {
     },
     ["bodymount_lasermix"] = {
         Bodygroups = {
-            {10, 1},
+            {8, 1},
         }
     },
     ["bodymount_flashlight"] = {
         Bodygroups = {
-            {10, 2},
+            {8, 1},
+            {9, 1},
         }
     },
     ["barrel_cutdown"] = {
@@ -627,8 +628,8 @@ SWEP.Attachments = {
     {
         PrintName = "BODY",
         Bone = "tag_barrel",
-        Pos = Vector(6, 0, -2.65),
-        Ang = Angle(0, 0, 90),
+        Pos = Vector(3, 1.45, 0.55),
+        Ang = Angle(0, 0, -45),
         Icon_Offset = Vector(0, 0, 0),
         Category = {"bocw_lmg_body_laserwest", "bocw_lmg_body_mixwest"},
         InstalledElements = {"bodymount_lasermix"},
@@ -637,7 +638,7 @@ SWEP.Attachments = {
         Hidden = true,
         MergeSlots = {4,5},
         Bone = "tag_barrel",
-        Pos = Vector(6, 0, -3),
+        Pos = Vector(3.5, 2.11, 1.29),
         Ang = Angle(0, 0, 0),
         Category = {"bocw_lmg_body_flashwest"},
         InstalledElements = {"bodymount_flashlight"},
