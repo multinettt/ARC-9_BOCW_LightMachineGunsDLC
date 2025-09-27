@@ -675,3 +675,29 @@ ATT.SpeedMultSighted = 1.4
 ATT.SpreadMultHipFire = 1.3
 
 ARC9.LoadAttachment(ATT, "bocw_mg82_stock_raider")
+
+--
+
+ATT = {}
+
+ATT.PrintName = "MG 82 Muzzle Device"
+ATT.CompactName = "MUZZLE"
+ATT.Icon = Material("entities/bocw_atts/muzzles/mg82_muzzle.png", "mips smooth")
+ATT.Description = [[Default MG 82 muzzle device.]]
+
+ATT.SortOrder = -10
+
+ATT.Model = "models/weapons/arc9/atts/bocw_mg82_muzzle.mdl"
+
+ATT.Category = {"bocw_mg82_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_4"
+ATT.MuzzleParticleOverride_Priority = 1000
+ATT.MuzzleDevice = true
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_mg82_muzzle_base")
