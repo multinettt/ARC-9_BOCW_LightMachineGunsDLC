@@ -12,6 +12,34 @@ ooo        ooooo   .oooooo.        .ooooo.     .oooo.
  8    Y     888  `88.    .88'     `8.   .88P .oP     .o 
 o8o        o888o  `Y8bood8P'       `boood8'  8888888888 
 ]]
+--========== MUZZLE ===================
+ATT = {}
+
+ATT.PrintName = "Muzzle Brake 5.56"
+ATT.CompactName = "MZLBRK 556"
+ATT.Icon = Material("entities/bocw_atts/muzzles/m60_compensator1.png", "mips smooth")
+ATT.Description = [[Redirects gases upwards and to the sides to reduce muzzle rise.
+
+The Muzzle Brake returns in Call of Duty: Black Ops Cold War as a Muzzle attachment available for Assault Rifles, Submachine Guns, Tactical Rifles, Light Machine Guns, and Pistols. It increases control over vertical recoil.]]
+
+ATT.SortOrder = 1
+
+ATT.Model = "models/weapons/arc9/atts/bocw_m60_muzzle_compensator1.mdl"
+
+ATT.Category = "bocw_mg82_muzzle"
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_6"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ATT.RecoilUpMult = 0.92
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_mg82_muzzle_compensator1")
 --========== BARREL ===================
 ATT = {}
 
