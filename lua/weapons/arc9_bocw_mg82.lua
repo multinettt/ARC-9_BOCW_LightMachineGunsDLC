@@ -842,6 +842,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.5,
         DropMagAt = 4,
+        FireASAP = 1,
         MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
@@ -890,6 +891,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 4.5,
         DropMagAt = 4,
+        FireASAP = 1,
         MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
@@ -938,6 +940,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.5,
         DropMagAt = 4,
+        FireASAP = 1,
         MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
@@ -986,6 +989,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.5,
         DropMagAt = 4,
+        FireASAP = 1,
         MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
@@ -1034,6 +1038,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.8,
         DropMagAt = 3.5,
+        FireASAP = 1,
         MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
@@ -1082,6 +1087,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.8,
         DropMagAt = 3.5,
+        FireASAP = 1,
         MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
@@ -1130,6 +1136,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.5,
         DropMagAt = 3.5,
+        FireASAP = 1,
         MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
@@ -1178,6 +1185,7 @@ SWEP.Animations = {
         Time = 9.56,
         MagSwapTime = 3.5,
         DropMagAt = 3.5,
+        FireASAP = 1,
         MinProgress = 0.85,
         EventTable = {
             { s = "ARC9_BOCW.MG82_reload_start", t = 0 },
